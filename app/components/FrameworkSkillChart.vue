@@ -1,7 +1,7 @@
 <template>
-  <div id="lang-skill-area">
+  <div id="framework-skill-area">
     <div>
-      <h2>Language Skills</h2>
+      <h2>Framework Skills</h2>
     </div>
     <ClientOnly>
       <div class="chart-container">
@@ -42,8 +42,8 @@
 
   const client = useSupabaseClient<my_skill>();
 
-  const { data, error } = await useAsyncData('experiences_of_lang', async () => {
-      const my_skills = client.from('my_skill').select('*').eq('skill_tag_id', 1).order('years_of_experience', { ascending: false })
+  const { data, error } = await useAsyncData('experiences_of_framework', async () => {
+      const my_skills = client.from('my_skill').select('*').eq('skill_tag_id', 3).order('years_of_experience', { ascending: false })
       return my_skills;
     }
   );
@@ -66,7 +66,7 @@
 </script>
 
 <style scoped>
-#lang-skill-area {
+#framework-skill-area {
   border: 1px solid #ccc;
   border-radius: 20px;
   padding: 10px;

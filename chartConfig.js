@@ -8,6 +8,11 @@ export const options = {
       grid: { display: false }, // X軸のグリッド線を消す
       categoryPercentage: 0.5, // セクション幅
       barPercentage: 0.8, // 棒の太さ
+      ticks: {
+        font: {
+          size: 10 // ここでサイズを調整（デフォルトは12程度）
+        }
+      }
     },
     y: {
       beginAtZero: true,
