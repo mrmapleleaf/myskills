@@ -18,6 +18,11 @@ export const options = {
       beginAtZero: true,
       // 最大値が5（例えば5段階評価）なら、6に設定すると上にゆとりが生まれます
       suggestedMax: 5,
+      ticks: {
+        font: {
+          size: 10 // ここでサイズを調整（デフォルトは12程度）
+        }
+      }
     },
   },
 };
