@@ -22,6 +22,7 @@
     Title,
     Tooltip,
     Legend,
+    BarController,
     BarElement,
     CategoryScale,
     LinearScale,
@@ -34,6 +35,7 @@
   ChartJS.register(
     CategoryScale,
     LinearScale,
+    BarController,
     BarElement,
     Title,
     Tooltip,

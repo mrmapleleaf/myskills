@@ -1,0 +1,10 @@
+# ビルドやデプロイに不要なファイルやディレクトリを指定して、イメージサイズを小さく保つ
+node_modules
+.nuxt
+.output
+.git
+.gitignore
+npm-debug.log*
+.DS_Store
+.env
+.env.*

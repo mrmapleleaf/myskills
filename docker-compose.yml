@@ -1,0 +1,11 @@
+services:
+  myskills:
+    container_name: myskills
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: myskills:latest
+    env_file:
+      - .env
+    ports:
+      - "3000:3000"
