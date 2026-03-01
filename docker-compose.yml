@@ -1,10 +1,11 @@
 services:
   myskills:
     container_name: myskills
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: myskills:latest
+    # Dockerfileを使用してイメージをビルドする設定はコメントアウトされているため、Docker Hubから最新のイメージをプルして使用する設定
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
+    image: mrmapleleaf/myskills:latest
     env_file:
       - .env
     ports:
